@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+
+	<constant name="struts.enable.DynamicMethodInvocation" value="true" />
+
+	<package name="com" extends="struts-default">
+
+		<default-action-ref name="index" />
+		<action name="index">
+			<result>/index.jsp</result>
+		</action>
+		
+		<action name="login" class="com.loginAction" method="login"><!-- 登陆 -->
+			<result name="loginSuccess">/query.jsp</result>
+			<result name="loginFailure">/index.jsp</result>
+			<result name="checkFailure">/index.jsp</result>
+		</action>
+
+		<action name="register" class="com.loginAction" method="register"><!--注册 -->
+			<result name="registerSuccess">/register.jsp</result>
+			<result name="registerFailure">/register.jsp</result>
+		</action>
+
+		<action name="queryByAuthor" class="com.bookAction" method="queryByAuthor"><!-- 作者查询 -->
+			<result name="query">/query.jsp</result>
+		</action>
+
+		<action name="queryByTitle" class="com.bookAction" method="queryByTitle"><!-- 书目查询 -->
+			<result name="detail">/detail.jsp</result>
+		</action>
+
+		<action name="delete" class="com.bookAction" method="delete"><!-- 删除图书 -->
+			<result name="delete">/query.jsp</result>
+		</action>
+		<action name="queryAuthor" class="com.AuthorAction" method="queryauthor">
+			<result name="authordetail">/authordetail.jsp</result>
+		</action>
+		<action name="revises" class="com.bookAction" method="revises">
+			<result name="revises">/revise.jsp</result>
+		</action>
+		<action name="revise" class="com.bookAction" method="revise">
+			<result name="revise">/revise.jsp</result>
+		</action>
+	</package>
+</struts>    
