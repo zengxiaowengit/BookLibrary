@@ -2,7 +2,7 @@ package dao;
 import java.sql.Connection;  
 import java.sql.DriverManager;  
 import java.sql.SQLException;  
-
+//这个class用于实现数据库的连接访问。
 public class DBConn {
 	private Connection conn;  
     /** 

@@ -1,4 +1,4 @@
-
+﻿
 <%@ page language="java" import="java.util.*"
 	contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
 <%@ taglib uri="/struts-tags" prefix="s"%>
@@ -29,9 +29,9 @@
 </head>
 
 <body>
-	登录用户: ${usernameMsg }
+	登录用户: ${usernameMsg }<!-- username in login. -->
 	<br>
-
+	<!-- this is details of book in my library.	-->
 
 	<div align="center">
 		<h1>欢迎来到我的图书馆!</h1>

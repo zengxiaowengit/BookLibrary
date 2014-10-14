@@ -2,7 +2,7 @@ package dao;
 
 import java.math.BigDecimal;
 import java.util.*;
-
+// 这个class用于实现book类。private申明了它的属性。
 public class Book {
 	private BigDecimal isbn;
 	private String title;
