@@ -26,7 +26,7 @@
 
 </head>
 
-<body>
+<body><!--这是在github上添加的注释 -->
 <h2>修改图书${titleMsg }</h2>
 	<s:form action="revise.action">
 		<table>
