@@ -1,5 +1,5 @@
 package com;
-
+//远程github修改此内容。
 import java.math.BigDecimal;
 import javax.servlet.http.HttpServletRequest;
 import org.apache.struts2.ServletActionContext;
@@ -17,9 +17,9 @@ public class AuthorAction extends ActionSupport{
 		HttpServletRequest request = ServletActionContext.getRequest();
 		//String temp = request.getParameter("authorID");
 		//BigDecimal authorID = new BigDecimal(temp);
-		//System.out.println("��ȡ����authorIDֵ��" + authorID);
+		//System.out.println("¶ÁÈ¡µ½µÄauthorIDÖµÊÇ" + authorID);
 		try {
-			// Request����
+			// Request¶ÔÏó
 			request.setAttribute("authorInfo", AuthorDAOFactory
 					.getAuthorDAOInstance().queryAuthor(authorID));
 		} catch (Exception e) {
