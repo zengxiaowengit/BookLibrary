@@ -6,7 +6,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 import dao.DBConn;
-<!-- this is the the second file of the second revise.-->
+
 public class select{  
     
     /** 
