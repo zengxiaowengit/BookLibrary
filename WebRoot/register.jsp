@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" contentType="text/html; charset=UTF-8"
+﻿<%@ page language="java" import="java.util.*" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%
 	String path = request.getContextPath();
@@ -16,7 +16,7 @@
 <body>
 	<h4>请输入用户注册信息</h4>
 	点击此处
-	<a href="/index.jsp">登录</a>
+	<a href="/index.jsp">登录</a><!-- this is the the first file of the second revise.-->
 	<h:form action="login">
 		<table>
 			<tr>
